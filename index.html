@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Zadania js 4</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="newcss/newcss.css" type="text/css" />
-    </head>
-    <body>
-        <div class="zadania">
-                1.	Napisz dwie funkcje, które wypisują podany tekst (we wskazanym elemencie dokumentu):</br>
-                a.	zastępując istniejącą zawartość</br>
-                b.	dopisując do istniejącej zawartości</br>
-                <p id="text1">Ala ma kota</p></br>
-                <input type="text" id="text1zm"></br>
-                <input type="button" onclick="zmianatextu1()" value="zastap text"></br>
-                <input type="button" onclick="zmianatextu2()" value="dopisz text"></br>
-                
-        </div>
-        <script type="text/javascript" src="newjs/newjs.js"></script>
-    </body>
+
+<head>
+    <title>Zadania js 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newcss/newcss.css" type="text/css" />
+</head>
+
+<body>
+    <div class="zadania">
+        1. Napisz dwie funkcje, które wypisują podany tekst (we wskazanym elemencie dokumentu):</br>
+        a. zastępując istniejącą zawartość</br>
+        b. dopisując do istniejącej zawartości</br>
+        <p id="text1">Ala ma kota</p>
+        </br>
+        <input type="text" id="text1zm">
+        </br>
+        <input type="button" onclick="zmianatextu1()" value="zastap text">
+        </br>
+        <input type="button" onclick="zmianatextu2()" value="dopisz text">
+        </br>
+    </div>
+    <div class="zadania">
+        2. Napisz dwie funkcje liczące:</br>
+        a. obwód prostokąta (dla danych długości boków)</br>
+        b. cenę brutto towaru (po podaniu ceny netto i stawki vat w procentach)</br>
+        <p id="suma1"></p></br>
+        <p>Wpisz długość a: <input type="text" id="dlugosca"></p></br>
+        <p>Wpisz długość b: <input type="text" id="dlugoscb"></p></br>
+        <p>Wpisz cenę netto: <input type="text" id="cenanetto"></p></br>
+        <p>Wpisz stwakę vat: <input type="text" id="vat"></p></br>
+        <input type="button" onclick="obwod()" value="oblicz obwód"></br>
+        <input type="button" onclick="cenabrutto()" value="policz cenę brutto"></br>
+    </div>
+    <script type="text/javascript" src="newjs/newjs.js"></script>
+</body>
+
 </html>

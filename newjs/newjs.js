@@ -9,7 +9,17 @@ function zmianatextu2(){
 var tekst = document.createTextNode(zmiana);
 nowy.appendChild(tekst);
 var rodzic = document.getElementById("text1");
-rodzic.appendChild(nowy);
-    
-    //document.getElementById("text1").innerHTML = pierwszy+zmiana;
+rodzic.appendChild(nowy); 
+}
+
+//zad2
+function obwod(){
+    var boka=parseFloat(document.getElementById("dlugosca").value);
+    var bokb=parseFloat(document.getElementById("dlugoscb").value);
+    var wynik;
+    if(isNaN(boka || bokb)){
+        alert("wprowadz jako bok a liczbę naturalną");
+    }
+wynik=2*boka+2*bokb;
+document.getElementById("suma1").innerHTML=wynik;
 }

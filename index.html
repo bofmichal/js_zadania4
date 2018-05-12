@@ -27,15 +27,27 @@
         2. Napisz dwie funkcje liczące:</br>
         a. obwód prostokąta (dla danych długości boków)</br>
         b. cenę brutto towaru (po podaniu ceny netto i stawki vat w procentach)</br>
-        <p id="suma1"></p>
-        <p id="suma2"></p>
+        <p>Obwód prostokąta wynosi: <span id="suma1"></p>
+        <p>Cena brutto wynosi: <span id="suma2"></p>
         <p>Wpisz długość a: <input type="text" id="dlugosca"></p>
         <p>Wpisz długość b: <input type="text" id="dlugoscb"></p>
         <p>Wpisz cenę netto: <input type="text" id="cenanetto"></p>
-        <p>Wpisz stwakę vat: <input type="text" id="vat"></p>
+        <p>Wpisz stwakę vat: <input type="text" id="vat">%</p>
         <input type="button" onclick="obwod()" value="oblicz obwód"></br>
         <input type="button" onclick="cenabrutto()" value="policz cenę brutto"></br>
     </div>
+    <div class="zadania">
+    3.	Napisz funkcję, która:</br>
+a.	sprawdzi, czy liczba jest całkowita (zwraca true lub false)</br>
+b.	zwraca -1, jeśli wartość przekazana jako parametr jest ujemna, +1 
+jeśli jest dodatnia, albo 0 jeśli jest równa zero</br>
+<p>Liczba jest: <span id="liczba1"></p>
+    <p>Liczba jest: <span id="liczba2"></p>
+    <p>Wpisz liczbę a: <input type="text" id="dlugosca"></p>
+    <p>Wpisz liczbę b: <input type="text" id="dlugoscb"></p>    
+    <input type="button" onclick="calkowita()" value="sprawdz czy calkowita"></br>
+    <input type="button" onclick="dodatnia()" value="sprawdz czy dodatnia"></br>
+</div>
     <script type="text/javascript" src="newjs/newjs.js"></script>
 </body>
 

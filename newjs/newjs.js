@@ -75,3 +75,23 @@ function dodatnia(){
         console.log(dodatnia);
     }
 }
+//zad4
+//a
+function odadob(){
+    var ar=[];
+    var oda=parseFloat(document.getElementById("liczbaa").value);
+    var dob=parseFloat(document.getElementById("liczbab").value);
+    var sum=0;
+    for (var i=0; i<(dob-oda)+1; ++i){
+        //ar[i]=i+oda;
+        sum += i+oda;
+    }
+    document.getElementById("suma3").innerHTML=sum;
+        console.log(sum);
+        if(isNaN(oda) || isNaN(dob)){
+            alert("wpisz liczbę");
+        }
+        if(oda%1!=0 || dob%1!=0){
+            alert("wpisz liczbę calkowita");
+        }
+}

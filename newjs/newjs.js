@@ -95,3 +95,17 @@ function odadob(){
             alert("wpisz liczbę calkowita");
         }
 }
+//b
+function sumaoczek(){
+    var kostki=parseInt(document.getElementById("liczkost").value)
+    var suma = 0;
+var los;
+for(var i = 0; i < kostki; ++i) {
+los = Math.floor((Math.random()*6)+1);
+suma += los;
+console.log(los);
+}
+console.log(suma);
+document.getElementById("suma4").innerHTML=suma;
+//console.log(los);
+}

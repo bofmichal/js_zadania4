@@ -109,3 +109,13 @@ console.log(suma);
 document.getElementById("suma4").innerHTML=suma;
 //console.log(los);
 }
+//zad5
+var tab=[];
+//a
+function tablica1(){
+    for (var i = 0; i < 10; ++i) {
+        tab[i] = 1 + Math.floor(Math.random() * 20);
+        }
+        console.log(tab);
+        document.getElementById("tablica").innerHTML=tab;  
+}

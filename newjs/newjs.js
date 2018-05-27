@@ -119,3 +119,47 @@ function tablica1(){
         console.log(tab);
         document.getElementById("tablica").innerHTML=tab;  
 }
+//d
+function tablica2(){
+    var asd=tab;
+    var sum = 0;     
+for (var i = 0; i < 10; ++i) {
+sum += asd[i];
+
+}
+console.log("suma: " + sum);
+console.log("srednia: " + sum / 10);
+document.getElementById("srednia").innerHTML=sum/10;
+
+}
+
+//f
+function tablica3(){
+    /*var qwe=tab;
+    var sr = parseInt(document.getElementById("srednia").innerHTML); 
+var maxi; 
+for (var i = 0; i < 10; ++i) {
+/*if (qwe[i] > sr && qwe[i+1]>qwe[i]) {
+    console.log(qwe[i]);
+    //console.log([i]);
+}
+if (qwe[i] > sr){
+    qwe.splice(i, i)
+    console.log(qwe);
+}
+}*/
+var min = Number.MAX_VALUE;
+var qwe=tab;
+    var minx = parseInt(document.getElementById("srednia").innerHTML);
+    var minix;
+    for (var i = 0; i < 10; ++i) {
+        if (qwe[i] > minx && qwe[i] < min) {
+            min = qwe[i];
+            minix = i;
+        }
+    }    
+    console.log(qwe);
+    console.log(min);
+    console.log(minix);
+    document.getElementById("nsrednia").innerHTML =  min + " na pozycji " + minix;
+}

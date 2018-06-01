@@ -134,20 +134,7 @@ document.getElementById("srednia").innerHTML=sum/10;
 }
 
 //f
-function tablica3(){
-    /*var qwe=tab;
-    var sr = parseInt(document.getElementById("srednia").innerHTML); 
-var maxi; 
-for (var i = 0; i < 10; ++i) {
-/*if (qwe[i] > sr && qwe[i+1]>qwe[i]) {
-    console.log(qwe[i]);
-    //console.log([i]);
-}
-if (qwe[i] > sr){
-    qwe.splice(i, i)
-    console.log(qwe);
-}
-}*/
+function tablica3(){    
 var min = Number.MAX_VALUE;
 var qwe=tab;
     var minx = parseInt(document.getElementById("srednia").innerHTML);
@@ -162,4 +149,34 @@ var qwe=tab;
     console.log(min);
     console.log(minix);
     document.getElementById("nsrednia").innerHTML =  min + " na pozycji " + minix;
+}
+//e
+function tablica4(){
+    var qwe=tab;
+    var sr = parseInt(document.getElementById("srednia").innerHTML);
+    var ile=0;
+    for (var i = 0; i < 10; ++i) {
+        if (qwe[i] > sr) {
+            ile++;
+            
+        }
+    }    
+    console.log(qwe);
+    console.log(ile);    
+    document.getElementById("wsrednia").innerHTML =  ile; 
+}
+//g niedok wycinanie tablicy zakres i dwrotnie
+function tablica5(){
+    var zxc=tab;
+    var odi=parseFloat(document.getElementById("odx").value);
+    var doi=parseFloat(document.getElementById("dox").value);
+    var tabix;
+    function isBigEnough(value) {
+        return value >= odi && value <= doi;
+      }      
+      var filtered = zxc.filter(isBigEnough);
+    if(odi>doi || odi<0 || doi>20 || isNaN(odi) || isNaN(doi) || odi%1!=0 || doi%1!=0){
+        alert("Wpisz liczbęrzeczywistą z przedziału od 1 do 20!")
+    }
+    console.log(filtered);
 }
